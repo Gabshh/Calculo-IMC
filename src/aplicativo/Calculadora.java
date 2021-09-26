@@ -14,11 +14,13 @@ public class Calculadora {
 		Matematica calculo = new Matematica();
 		TabelaStatus status = new TabelaStatus();
 		
-		System.out.print("Qual o seu peso(kg)? ");
+		System.out.print("Qual o seu peso (kg)? ");
 		calculo.peso = leitor.nextInt();
 		
-		System.out.print("Qual sua altura(?,??)? ");
+		System.out.print("Qual sua altura (?,??) ");
 		calculo.altura = leitor.nextDouble();
+		
+		leitor.close();
 
 		System.out.println("Seu IMC é");
 		calculo.calcular();
